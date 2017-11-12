@@ -1,0 +1,30 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/liuning4013/first_springboot/     # 配置git仓库的地址
+          search-paths: springcloud_config/config-repo                           # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: 984722082@qq.com                                              # git仓库的账号
+          password: ln8213643                                             # git仓库的密码
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/  # 注册中心eurka地址
+     #关闭自我保护模式，设置清理的间隔时间
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 4000
+
+ rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: liuning
+    password: liuning
+management:
+  security:
+     enabled: false

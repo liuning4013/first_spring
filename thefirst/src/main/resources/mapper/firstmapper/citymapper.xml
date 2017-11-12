@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.first.mapper.firstdata.CityMapper">
+    <resultMap id="city_map" type="com.test.first.domain.City">
+        <result property="id" column="id"></result>
+        <result property="provinceId" column="province_id"></result>
+        <result property="cityName" column="city_name"></result>
+        <result property="description" column="description"></result>
+    </resultMap>
+
+ <!--   <parameterMap id="City" type="com.test.first.domain.City"/>-->
+
+    <select id="getCitys" resultMap="city_map">
+        select * from city
+    </select>
+    <select id="getOneCity" resultMap="city_map" parameterType="java.lang.Long">
+        select * from city where id = #{id}
+    </select>
+    <update id="edit" parameterType="com.test.first.domain.City">
+        UPDATE city a
+            SET a.province_id = #{provinceId},
+                a.city_name = #{cityName},
+                a.description = #{description}
+            WHERE  a.id = #{id}
+    </update>
+
+    <insert id="save" parameterType="com.test.first.domain.City">
+        INSERT INTO city(province_id,city_name,description)
+                      VALUE (#{provinceId},#{cityName},#{description})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Long">
+        DELETE from city where id = #{id}
+    </delete>
+</mapper>

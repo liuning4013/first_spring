@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>user</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+</head>
+<body class="container">
+<br/>
+<h1>修改城市信息</h1>
+<br/><br/>
+<div class="with:80%">
+    <form class="form-horizontal"   th:action="@{/edit}" th:object="${city}"  method="post">
+        <input type="hidden" name="id" th:value="*{id}" />
+        <div class="form-group">
+            <label for="provinceId" class="col-sm-2 control-label">城市编号</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="provinceId"  id="provinceId" th:value="*{provinceId}" placeholder="provinceId"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="cityName" class="col-sm-2 control-label" >城市名称</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="cityName" id="cityName"  th:value="*{cityName}" placeholder="cityName"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description" class="col-sm-2 control-label">描述</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="description"  id="description" th:value="*{description}" placeholder="description"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description" class="col-sm-2 control-label">用户姓名</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="username"  id="username" th:value="${user.username}" placeholder="username"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" value="Submit" class="btn btn-info" />
+                &nbsp; &nbsp; &nbsp;
+                <a href="/toAdd" th:href="@{/getCitys}" class="btn btn-info">Back</a>
+            </div>
+
+        </div>
+    </form>
+</div>
+</body>
+</html>

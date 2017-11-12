@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springcloud_config/config_client/config_client.iml" filepath="$PROJECT_DIR$/springcloud_config/config_client/config_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_config/config_server/config_server.iml" filepath="$PROJECT_DIR$/springcloud_config/config_server/config_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/first_springboot.iml" filepath="$PROJECT_DIR$/first_springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/four_springcloud/four_springcloud.iml" filepath="$PROJECT_DIR$/four_springcloud/four_springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_provider_customer/spring_consumer/spring_consumer.iml" filepath="$PROJECT_DIR$/springcloud_provider_customer/spring_consumer/spring_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_provider_customer/spring_erueka/spring_erueka.iml" filepath="$PROJECT_DIR$/springcloud_provider_customer/spring_erueka/spring_erueka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_provider_customer/spring_producder2/spring_producder2.iml" filepath="$PROJECT_DIR$/springcloud_provider_customer/spring_producder2/spring_producder2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_provider_customer/spring_producter/spring_producter.iml" filepath="$PROJECT_DIR$/springcloud_provider_customer/spring_producter/spring_producter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_config/springcloud_config.iml" filepath="$PROJECT_DIR$/springcloud_config/springcloud_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_provider_customer/springcloud_provider_customer.iml" filepath="$PROJECT_DIR$/springcloud_provider_customer/springcloud_provider_customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_java/test_java.iml" filepath="$PROJECT_DIR$/test_java/test_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thefirst/thefirst.iml" filepath="$PROJECT_DIR$/thefirst/thefirst.iml" />
+    </modules>
+  </component>
+</project>
